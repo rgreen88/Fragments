@@ -1,6 +1,7 @@
 package com.example.android.fragments;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -40,5 +41,28 @@ public class MainActivity extends AppCompatActivity {
 
         mViewPager.setCurrentItem(fragmentNumber);
 
+    }
+
+    //method to save data before configuration change for frag
+    public static class RetainedFragment1 extends Fragment {
+
+        // data object we want to retain
+        private Fragment1 data;
+
+        // this method is only called once for this fragment
+        @Override
+        public void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            // retain this fragment
+            setRetainInstance(true);
+        }
+
+        public void setData(Fragment1 data) {
+            this.data = data;
+        }
+
+        public Fragment1 getData() {
+            return data;
+        }
     }
 }
