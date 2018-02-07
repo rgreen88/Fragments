@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class Fragment1 extends Fragment {
+public class Fragment2 extends Fragment {
 
     private static final String TAG = "Frag1";
 
@@ -25,7 +25,7 @@ public class Fragment1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         //remove super to inflate and return view object to fragment
-        View view = inflater.inflate(R.layout.fragment1_layout,container,false);
+        View view = inflater.inflate(R.layout.fragment2_layout,container,false);
 
         btn_nav_fragment_1 = view.findViewById(R.id.btn_nav_frag1);
         btn_nav_fragment_2 = view.findViewById(R.id.btn_nav_frag2);

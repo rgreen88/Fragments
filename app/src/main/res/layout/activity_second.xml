@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:textSize="25sp"
-        android:text="@string/welcome_to_fragment4"
+        android:text="@string/welcome_to_second_activity"
         android:layout_marginTop="40dp"
         android:id="@+id/textTitle"/>
 
